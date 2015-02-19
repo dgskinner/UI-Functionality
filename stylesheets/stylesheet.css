@@ -1,0 +1,29 @@
+body {
+	padding: 50px;
+}
+
+h1 {
+	display: inline-block;
+}
+
+#top-row button {
+	float: right;
+}
+
+#graph-buttons button {
+	float: right;
+}
+
+#bottom-row div {
+	display: inline-block;
+}
+
+#devices {
+	float: right;
+}
+
+#pie-chart {
+	position: relative;
+	float: right;
+	transform: translateX(-200px);
+}

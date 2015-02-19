@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Challenge</title>
+		<link rel="stylesheet" type="text/css" href="./stylesheets/graph-stylesheet.css">
+		<link rel="stylesheet" type="text/css" href="./stylesheets/stylesheet.css">
+	</head>
+
+	<body>
+		<div id="top-row">
+			<h1>Activity</h1>
+			<button id="today">Today</button>
+			<button id="3-days">3 Days</button>
+			<button id="7-days">7 Days</button>
+			<button id="14-days">14 Days</button>
+		</div>
+
+		<div id="graph">
+			
+		</div>
+		
+		<div id="graph-buttons">
+			<button id="mean-line">Mean Line</button>
+			<button id="trend-line">Trend Line</button>
+		</div>
+
+		<div id="bottom-row">
+			<div id="segments">
+				<h1>Segments</h1>
+				<table id="male-female">
+					<tr>
+						<td>All</td><td>200</td>
+					</tr>
+					<tr>
+						<td>Male</td><td>150</td>
+					</tr>
+					<tr>
+						<td>Male</td><td>50</td>
+					</tr>
+				</table>
+			</div>
+			
+			<div id="devices">
+				<h1>Devices</h1>
+				<div id="pie-chart">
+					<!-- 
+					for each piece of the pie chart create one div and give it
+					a data-value attribute that represents the amount (in degrees) that
+					represents its total visible portion, and a data-start attribute
+					that matches the amount rotation for the starting  (the cumulative value amount of all the previous pieces).
+					-->
+					<div class="pie" data-start="0" data-value="30"></div>
+					<div class="pie highlight" data-start="30" data-value="30"></div>
+					<div class="pie" data-start="60" data-value="40"></div>
+					<div class="pie big" data-start="100" data-value="260"></div>
+				</div>
+			</div>
+		</div>
+		
+		<script src="./jquery-2.1.1.js"></script>
+		<script src="./backbone.js"></script>
+		<script src="./underscore.js"></script>
+
+	</body>
+</html>
