@@ -9,10 +9,10 @@
 	<body>
 		<div id="top-row">
 			<h1>Activity</h1>
-			<button id="today">Today</button>
-			<button id="3-days">3 Days</button>
-			<button id="7-days">7 Days</button>
-			<button id="14-days">14 Days</button>
+			<button id="today" class="timeframe" data-timeframe="1">Today</button>
+			<button id="3-days" class="timeframe" data-timeframe="3">3 Days</button>
+			<button id="7-days" class="timeframe" data-timeframe="7">7 Days</button>
+			<button id="14-days" class="timeframe" data-timeframe="14">14 Days</button>
 		</div>
 
 		<div id="graph">
@@ -26,18 +26,7 @@
 
 		<div id="bottom-row">
 			<div id="segments">
-				<h1>Segments</h1>
-				<table id="male-female">
-					<tr>
-						<td>All</td><td>200</td>
-					</tr>
-					<tr>
-						<td>Male</td><td>150</td>
-					</tr>
-					<tr>
-						<td>Male</td><td>50</td>
-					</tr>
-				</table>
+				
 			</div>
 			
 			<div id="devices">
@@ -63,7 +52,9 @@
 		<script src="./jquery.csv-0.71.js"></script>
 		<script src="./underscore.js"></script>
 		<script src="./backbone.js"></script>
-		<script src="./sample-data.js"></script>
+		<script src="./sample_data.js"></script>
+		<script src="./views/numbers.js"></script>
+		<script src="./views/main.js"></script>
 		<script src="./functionality.js"></script>
 
 	</body>
