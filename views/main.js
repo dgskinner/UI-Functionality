@@ -10,8 +10,10 @@ var MainView = Backbone.View.extend({
 	},
 	
 	render: function (timeFrame) {
-		new NumbersView(this.timeFrames[timeFrame]);
-		// new PieChartView
+		var genderData = this.timeFrames[timeFrame]["gender"];
+		new NumbersView(genderData);
+		var deviceData = this.timeFrames[timeFrame]["device"];
+		new PieChartView(deviceData);
 	},
 	
 	updateTimeFrame: function () {

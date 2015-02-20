@@ -59,13 +59,42 @@ var genderCounts = function (indexes) {
 	return counts;
 }
 
+var countMobile = function (indexes) {
+	var mobileCount = 0;
+	for (var i in indexes) {
+		if (Device[i] == "mobile") {
+			mobileCount++;
+		}
+	}
+	return mobileCount;
+};
 
+var countDesktop = function (indexes) {
+	var desktopCount = 0;
+	for (var i in indexes) {
+		if (Device[i] == "desktop") {
+			desktopCount++;
+		}
+	}
+	return desktopCount;
+};
+
+var deviceCounts = function (indexes) {
+	var numMobile = countMobile(indexes);
+	var numDesktop = countDesktop(indexes);
+	var counts = {
+		mobile: numMobile,
+		desktop: numDesktop,
+		tablet: indexes.length - numMobile - numDesktop
+	}
+	return counts;
+}
 
 var timeFrames = {
-    1: genderCounts(todayIndexes),
-	3: genderCounts(threeDayIndexes),
-	7: genderCounts(sevenDayIndexes),
-	14: genderCounts(fourteenDayIndexes)
+    1: {gender: genderCounts(todayIndexes), device: deviceCounts(todayIndexes)},
+	3: {gender: genderCounts(threeDayIndexes), device: deviceCounts(threeDayIndexes)},
+	7: {gender: genderCounts(sevenDayIndexes), device: deviceCounts(sevenDayIndexes)},
+	14: {gender: genderCounts(fourteenDayIndexes), device: deviceCounts(fourteenDayIndexes)}
 };
 
 new MainView(timeFrames);

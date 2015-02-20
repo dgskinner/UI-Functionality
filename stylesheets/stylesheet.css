@@ -19,11 +19,12 @@ h1 {
 }
 
 #devices {
+	position: relative;
 	float: right;
 }
 
-#pie-chart {
-	position: relative;
+#piechart {
+	position: absolute;
 	float: right;
-	transform: translateX(-200px);
+/*	transform: translateX(200px);*/
 }
