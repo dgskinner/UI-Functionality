@@ -6,15 +6,17 @@ var PieChartView = Backbone.View.extend({
 	
 	render: function (deviceData) {
         var data = google.visualization.arrayToDataTable([
-          ['Task', 'Hours per Day'],
-          ['Mobile',  deviceData['mobile']],
-          ['Desktop', deviceData['desktop']],
-          ['Tablet',  deviceData['tablet']]
+			['Task', 'Hours per Day'],
+			['Mobile',  deviceData['mobile']],
+			['Desktop', deviceData['desktop']],
+			['Tablet',  deviceData['tablet']]
         ]);
 
         var chart = new google.visualization.PieChart(document.getElementById('piechart'));
 
         chart.draw(data);
+
+		return this;
 	}
 });
 

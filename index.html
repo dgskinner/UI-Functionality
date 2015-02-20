@@ -6,9 +6,9 @@
 		
 		<!-- https://google-developers.appspot.com/chart/interactive/docs/gallery/piechart -->
 	    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
-	    <script type="text/javascript">
-	      google.load("visualization", "1", {packages:["corechart"]});
-	    </script>
+	    <script type="text/javascript"> google.load("visualization", "1", {packages:["corechart"]}); </script>
+		<script type="text/javascript" src="https://www.google.com/jsapi?autoload={'modules':[{ 			'name':'visualization','version':'1','packages':['corechart']}]}">
+		</script>
 	</head>
 
 	<body>
@@ -20,8 +20,8 @@
 			<button id="14-days" class="timeframe" data-timeframe="14">14 Days</button>
 		</div>
 
-		<div id="graph">
-			
+		<div id="graph"> 
+			<div id="curve_chart" style="width: 900px; height: 500px"></div>
 		</div>
 		
 		<div id="graph-buttons">
@@ -52,6 +52,7 @@
 		<script src="./sample_data.js"></script>
 		<script src="./views/numbers.js"></script>
 		<script src="./views/pie_chart.js"></script>
+		<script src="./views/line_chart.js"></script>
 		<script src="./views/main.js"></script>
 		<script src="./functionality.js"></script>
 

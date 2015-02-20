@@ -14,6 +14,8 @@ var MainView = Backbone.View.extend({
 		new NumbersView(genderData);
 		var deviceData = this.timeFrames[timeFrame]["device"];
 		new PieChartView(deviceData);
+		var activityData = this.timeFrames[timeFrame]["activity"];
+		new LineChartView(activityData);
 	},
 	
 	updateTimeFrame: function () {

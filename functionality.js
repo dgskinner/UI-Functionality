@@ -91,10 +91,10 @@ var deviceCounts = function (indexes) {
 }
 
 var timeFrames = {
-    1: {gender: genderCounts(todayIndexes), device: deviceCounts(todayIndexes)},
-	3: {gender: genderCounts(threeDayIndexes), device: deviceCounts(threeDayIndexes)},
-	7: {gender: genderCounts(sevenDayIndexes), device: deviceCounts(sevenDayIndexes)},
-	14: {gender: genderCounts(fourteenDayIndexes), device: deviceCounts(fourteenDayIndexes)}
+    1: {gender: genderCounts(todayIndexes), device: deviceCounts(todayIndexes), activity: 1},
+	3: {gender: genderCounts(threeDayIndexes), device: deviceCounts(threeDayIndexes), activity: 2},
+	7: {gender: genderCounts(sevenDayIndexes), device: deviceCounts(sevenDayIndexes), activity: 3},
+	14: {gender: genderCounts(fourteenDayIndexes), device: deviceCounts(fourteenDayIndexes), activity: 4}
 };
 
 new MainView(timeFrames);

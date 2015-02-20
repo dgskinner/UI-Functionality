@@ -10,6 +10,14 @@ h1 {
 	float: right;
 }
 
+/*#graph {
+	width: 1000px;
+}*/
+
+#line-chart {
+	width: 90%;
+}
+
 #graph-buttons button {
 	float: right;
 }
