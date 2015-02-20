@@ -10,14 +10,3 @@ var NumbersView = Backbone.View.extend({
 		return this;
 	}
 });
-
-
-// 	<tr>
-// 		<td>All</td><td><%= total %></td>
-// 	</tr>
-// 	<tr>
-// 		<td>Male</td><td><%= males %></td>
-// 	</tr>
-// 	<tr>
-// 		<td>Male</td><td><%= females %></td>
-// 	</tr>

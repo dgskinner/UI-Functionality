@@ -10,7 +10,7 @@
 
 // $(UIFunctionality.initialize);
 
-Backbone.history.start();
+// Backbone.history.start();
 
 var todayIndexes = [];
 var threeDayIndexes = [];
