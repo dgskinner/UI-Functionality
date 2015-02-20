@@ -1,4 +1,4 @@
-var NumbersView = Backbone.View.extend({	
+var TableView = Backbone.View.extend({	
 	initialize: function (genderData) {
 		this.$el = $('table#male-female');
 		this.render(genderData);
