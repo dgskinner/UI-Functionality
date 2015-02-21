@@ -6,10 +6,11 @@ var MainView = Backbone.View.extend({
 	},
 	
 	events: {
-		'click button.timeframe': 'updateTimeFrame'
+		'click button.timeframe': 'updateTimeFrame',
+		'click h5': 'updateGenderData'
 	},
 	
-	render: function (timeFrame) {
+	render: function (timeFrame, gender) {
 		var genderData = this.timeFrames[timeFrame]["gender"];
 		new TableView(genderData);
 		var deviceData = this.timeFrames[timeFrame]["device"];
@@ -21,5 +22,9 @@ var MainView = Backbone.View.extend({
 	updateTimeFrame: function () {
 		var timeFrame = $(event.target).data('timeframe');
 		this.render(timeFrame);
+	},
+	
+	updateGenderData: function () {
+		
 	}
 });

@@ -12,7 +12,7 @@ h1 {
 	width: 92%;
 }
 
-div button {
+button {
 	float: right;
 	width: 80px;
 	height: 30px;
@@ -21,6 +21,7 @@ div button {
 	background: #F0F0F0;
 	margin-left: 3px;
     transform: translateY(100%);
+	cursor: pointer;
 }
 
 #line-chart {
@@ -52,8 +53,6 @@ div button {
 #piechart {
 	display: inline-block;
 	float: right;
-/*	margin-right: -300px;*/
-/*	transform: translateX(300px);*/
 	transform: translateY(-50px);
 	left: 40%;
 	z-index: -1;
@@ -64,11 +63,14 @@ div button {
 	font-size: 200%;
 }
 
-#male-female tr {
-	line-height: 120%;
-	
+#male-female tr h5 {
+	margin: 10px;
+	margin-left: 0px;
+	color: rgb(50, 0, 200);
+	text-decoration: underline;
 }
 
 #male-female td {
+	max-height: 50px;
 	min-width: 200px;
 }
