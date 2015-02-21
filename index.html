@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Challenge</title>
+		<link rel="stylesheet" type="text/css" href="./stylesheets/stylesheet.css">
+		
+		<!-- https://google-developers.appspot.com/chart/interactive/docs/gallery/piechart -->
+	    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+	    <script type="text/javascript"> google.load("visualization", "1", {packages:["corechart"]}); </script>
+	</head>
+
+	<body>
+		<div id="top-row">
+			<h1>Activity</h1>
+			<button id="14-days" class="timeframe" data-timeframe="14">14 Days</button>
+			<button id="7-days" class="timeframe" data-timeframe="7">7 Days</button>
+			<button id="3-days" class="timeframe" data-timeframe="3">3 Days</button>
+			<button id="today" class="timeframe" data-timeframe="1">Today</button>
+		</div>
+
+		<div id="graph"> 
+			<div id="curve_chart" style="width: 900px; height: 500px"></div>
+		</div>
+		
+		<div id="graph-buttons">
+			<button id="mean-line">Mean Line</button>
+			<button id="trend-line">Trend Line</button>
+		</div>
+
+		<div id="bottom-row">
+			<div id="segments">
+				<h1>Segments</h1>
+				<table id="male-female">
+					
+				</table>
+			</div>
+			
+			<div id="devices">
+				<h1>Devices</h1>
+				<div id="piechart" style="width: 630px; height: 350px;"></div>
+			</div>
+		</div>
+		
+		<div id="result"></div>
+		
+		<script src="./libraries/jquery-2.1.1.js"></script>
+		<script src="./libraries/underscore.js"></script>
+		<script src="./libraries/backbone.js"></script>
+		<script src="./sample_data.js"></script>
+		<script src="./views/Table.js"></script>
+		<script src="./views/pie_chart.js"></script>
+		<script src="./views/line_chart.js"></script>
+		<script src="./views/main.js"></script>
+		<script src="./functionality.js"></script>
+
+	</body>
+</html>

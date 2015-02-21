@@ -1,0 +1,76 @@
+body {
+	padding: 60px;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+
+h1 {
+	display: inline-block;
+	margin-left: 30px;
+}
+
+#top-row {
+	width: 92%;
+}
+
+button {
+	float: right;
+	width: 80px;
+	height: 30px;
+	border: 3px solid lightgray;
+	border-radius: 5px;
+	background: #F0F0F0;
+	margin-left: 3px;
+    transform: translateY(100%);
+	cursor: pointer;
+}
+
+#line-chart {
+	width: 100%;
+	margin-top: 20px;
+}
+
+#graph-buttons {
+	height: 100px;
+}
+
+#graph-buttons button {
+	background: #D7FFD7;
+	width: 120px;
+	margin-top: 10px;
+}
+
+#bottom-row div {
+	position: relative;
+	display: inline-block;
+}
+
+#devices h1 {
+	display: block;
+	text-align: right;
+	margin-right: 90px;
+}
+
+#piechart {
+	display: inline-block;
+	float: right;
+	transform: translateY(-50px);
+	left: 40%;
+	z-index: -1;
+}
+
+#male-female {
+	margin-left: 30px;
+	font-size: 200%;
+}
+
+#male-female tr h5 {
+	margin: 10px;
+	margin-left: 0px;
+	color: rgb(50, 0, 200);
+	text-decoration: underline;
+}
+
+#male-female td {
+	max-height: 50px;
+	min-width: 200px;
+}
